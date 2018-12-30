@@ -8,9 +8,196 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'sango/style', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   </head>
 
   <body>
-    <p>https://saruwakakun.design/</p>
+    <header>
+      <div class='header-container container'>
+        <div class='logo-container'>
+          <%= image_tag('sango/sango-1.svg') %>
+        </div>
+        <nav class='header-nav'>
+          <ul>
+            <li><a href='#'><%= fa_icon "flag" %>特徴</a></li>
+            <li><a href='#'><%= fa_icon "book" %>使い方ガイド</a></li>
+            <li><a href='#'><%= fa_icon "cloud" %>ダウンロード</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class='container'>
+      <div class='mv-container'>
+        <div class='mv-image'>
+          <%= image_tag('sango/sangoheader-min.png') %>
+        </div>
+        <div class='mv-text-container'>
+          <p class='mv-title'>心地よいWordPressテーマ</p>
+          <p class='mv-lead'>SANGOはユーザーフレンドリーを追求したWordPressテーマです。
+          Googleのマテリアルデザインを大部分で採用。内部SEOも最適化されています。</p>
+          <span class='btn'>
+            <%= fa_icon "caret-right" %>特徴を見る
+          </span>
+        </div>
+      </div>
+
+      <div class='main-container'>
+        <div class='article-container'>
+          <ul class='tab-navigation'>
+            <li>
+              <input type="radio" name="nav"  id="nav-newArticle" class='hidden' checked/>
+              <label for="nav-newArticle">
+                <%= fa_icon "rocket" %>
+                新着記事
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="nav"  id="nav-recommendArticle" class='hidden'/>
+              <label for="nav-recommendArticle">
+                <%= fa_icon "bookmark" %>
+                おすすめ記事
+              </label>
+            </li>
+          </ul>
+
+          <div class='card-container'>
+
+            <div class='card'>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-520x300.jpg') %>
+                <span class='label right'>NEW</span>
+                <span class='label left'>ニュース</span>
+              </div>
+              <div class='body'>
+                <div class='timestamp'>2018.2.2</div>
+                <div class='title'>WordPressテーマ「SANGO」29の魅力</div>
+              </div>
+            </div>
+            <div class='card'>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-520x300.jpg') %>
+                <span class='label right'>NEW</span>
+                <span class='label left'>ニュース</span>
+              </div>
+              <div class='body'>
+                <div class='timestamp'>2018.2.2</div>
+                <div class='title'>WordPressテーマ「SANGO」29の魅力</div>
+              </div>
+            </div>
+            <div class='card'>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-520x300.jpg') %>
+                <span class='label right'>NEW</span>
+                <span class='label left'>ニュース</span>
+              </div>
+              <div class='body'>
+                <div class='timestamp'>2018.2.2</div>
+                <div class='title'>WordPressテーマ「SANGO」29の魅力</div>
+              </div>
+            </div>
+            <div class='card'>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-520x300.jpg') %>
+                <span class='label right'>NEW</span>
+                <span class='label left'>ニュース</span>
+              </div>
+              <div class='body'>
+                <div class='timestamp'>2018.2.2</div>
+                <div class='title'>WordPressテーマ「SANGO」29の魅力</div>
+              </div>
+            </div>
+          </div>
+
+          <ul class='pagination'>
+            <li class='active'>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </div>
+
+        <aside class='aside-container'>
+
+          <div class='search-container'>
+            <input type="search" name="" value="">
+            <button>
+              <%= fa_icon "search" %>
+            </button>
+          </div>
+
+          <div class='profile-card'>
+            <div class='thumb'>
+              <%= image_tag('sango/profile-01-min.png') %>
+            </div>
+            <div class='body'>
+              <div class='profile-img'>
+                <%= image_tag('sango/catnose.png') %>
+              </div>
+              <p class='title'>CatNose</p>
+              <p class='lead'>
+                WordPressテーマ「SANGO」はサルワカの中の人が制作しました。なお、本デモサイトに含まれるアイキャッチ画像や記事内の画像はテーマには含まれないのでご注意ください。
+              </p>
+
+              <ul class='sns-container'>
+                <li class='twitter'>
+                  <%= fa_icon "twitter"%>
+                </li>
+                <li class='fb'>
+                  <%= fa_icon "facebook" %>
+                </li>
+                <li class='insta'>
+                  <%= fa_icon "instagram" %>
+                </li>
+                <li class='rss'>
+                  <%= fa_icon "rss" %>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class='asaid-card'>
+            <div class='header text-center'>
+              <%= fa_icon "fa fa-map-marker-alt" %>
+              メニュー
+            </div>
+            <div class='body'>
+              あああああああ
+            </div>
+          </div>
+
+          <div class='asaid-card'>
+            <div class='header text-center'>
+              <%= fa_icon "fa fa-map-marker-alt" %>
+              メニュー
+            </div>
+            <div class='body'>
+              あああああああ
+            </div>
+          </div>
+
+          <div class='asaid-card'>
+            <div class='header text-center'>
+              <%= fa_icon "fa fa-map-marker-alt" %>
+              メニュー
+            </div>
+            <div class='body'>
+              あああああああ
+            </div>
+          </div>
+
+          <div class='asaid-card'>
+            <div class='header text-center'>
+              <%= fa_icon "fa fa-map-marker-alt" %>
+              メニュー
+            </div>
+            <div class='body'>
+              あああああああ
+            </div>
+          </div>
+
+          
+        </aside>
+      </div>
+    </div>
   </body>
 </html>
