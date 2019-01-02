@@ -8,9 +8,448 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= stylesheet_link_tag    'sango/style', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet">
   </head>
 
   <body>
-    <p>https://saruwakakun.design/</p>
+    <header>
+      <div class='header-container container'>
+        <div class='logo-container'>
+          <%= image_tag('sango/sango-1.svg') %>
+        </div>
+        <nav class='header-nav'>
+          <ul>
+            <li><a href='#'><%= fa_icon "flag" %>特徴</a></li>
+            <li><a href='#'><%= fa_icon "book" %>使い方ガイド</a></li>
+            <li><a href='#'><%= fa_icon "cloud" %>ダウンロード</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+
+    <div class='container'>
+      <div class='mv-container'>
+        <div class='mv-image'>
+          <%= image_tag('sango/sangoheader-min.png') %>
+        </div>
+        <div class='mv-text-container'>
+          <p class='mv-title'>心地よいWordPressテーマ</p>
+          <p class='mv-lead'>SANGOはユーザーフレンドリーを追求したWordPressテーマです。
+          Googleのマテリアルデザインを大部分で採用。内部SEOも最適化されています。</p>
+          <span class='btn'>
+            <%= fa_icon "caret-right" %>特徴を見る
+          </span>
+        </div>
+      </div>
+
+      <div class='main-container'>
+        <div class='article-container'>
+          <ul class='tab-navigation'>
+            <li>
+              <input type="radio" name="nav"  id="nav-newArticle" class='hidden' checked/>
+              <label for="nav-newArticle">
+                <%= fa_icon "rocket" %>
+                新着記事
+              </label>
+            </li>
+            <li>
+              <input type="radio" name="nav"  id="nav-recommendArticle" class='hidden'/>
+              <label for="nav-recommendArticle">
+                <%= fa_icon "bookmark" %>
+                おすすめ記事
+              </label>
+            </li>
+          </ul>
+
+          <div class='card-container'>
+
+            <div class='card'>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-520x300.jpg') %>
+                <span class='label right'>NEW</span>
+                <span class='label left'>ニュース</span>
+              </div>
+              <div class='body'>
+                <div class='timestamp'>2018.2.2</div>
+                <div class='title'>WordPressテーマ「SANGO」29の魅力</div>
+              </div>
+            </div>
+            <div class='card'>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-520x300.jpg') %>
+                <span class='label right'>NEW</span>
+                <span class='label left'>ニュース</span>
+              </div>
+              <div class='body'>
+                <div class='timestamp'>2018.2.2</div>
+                <div class='title'>WordPressテーマ「SANGO」29の魅力</div>
+              </div>
+            </div>
+            <div class='card'>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-520x300.jpg') %>
+                <span class='label right'>NEW</span>
+                <span class='label left'>ニュース</span>
+              </div>
+              <div class='body'>
+                <div class='timestamp'>2018.2.2</div>
+                <div class='title'>WordPressテーマ「SANGO」29の魅力</div>
+              </div>
+            </div>
+            <div class='card'>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-520x300.jpg') %>
+                <span class='label right'>NEW</span>
+                <span class='label left'>ニュース</span>
+              </div>
+              <div class='body'>
+                <div class='timestamp'>2018.2.2</div>
+                <div class='title'>WordPressテーマ「SANGO」29の魅力</div>
+              </div>
+            </div>
+            <div class='card'>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-520x300.jpg') %>
+                <span class='label right'>NEW</span>
+                <span class='label left'>ニュース</span>
+              </div>
+              <div class='body'>
+                <div class='timestamp'>2018.2.2</div>
+                <div class='title'>WordPressテーマ「SANGO」29の魅力</div>
+              </div>
+            </div>
+            <div class='card'>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-520x300.jpg') %>
+                <span class='label right'>NEW</span>
+                <span class='label left'>ニュース</span>
+              </div>
+              <div class='body'>
+                <div class='timestamp'>2018.2.2</div>
+                <div class='title'>WordPressテーマ「SANGO」29の魅力</div>
+              </div>
+            </div>
+            <div class='card'>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-520x300.jpg') %>
+                <span class='label right'>NEW</span>
+                <span class='label left'>ニュース</span>
+              </div>
+              <div class='body'>
+                <div class='timestamp'>2018.2.2</div>
+                <div class='title'>WordPressテーマ「SANGO」29の魅力</div>
+              </div>
+            </div>
+            <div class='card'>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-520x300.jpg') %>
+                <span class='label right'>NEW</span>
+                <span class='label left'>ニュース</span>
+              </div>
+              <div class='body'>
+                <div class='timestamp'>2018.2.2</div>
+                <div class='title'>WordPressテーマ「SANGO」29の魅力</div>
+              </div>
+            </div>
+          </div>
+
+          <ul class='pagination'>
+            <li class='active'>1</li>
+            <li>2</li>
+            <li>3</li>
+          </ul>
+        </div>
+
+        <aside class='aside-container'>
+          <div class='search-container'>
+            <input type="search" name="" value="">
+            <button>
+              <%= fa_icon "search" %>
+            </button>
+          </div>
+
+          <div class='profile-card'>
+            <div class='thumb'>
+              <%= image_tag('sango/profile-01-min.png') %>
+            </div>
+            <div class='body'>
+              <div class='profile-img'>
+                <%= image_tag('sango/catnose.png') %>
+              </div>
+              <p class='title'>CatNose</p>
+              <p class='lead'>
+                WordPressテーマ「SANGO」はサルワカの中の人が制作しました。なお、本デモサイトに含まれるアイキャッチ画像や記事内の画像はテーマには含まれないのでご注意ください。
+              </p>
+
+              <ul class='sns-container circle'>
+                <li class='twitter'>
+                  <%= fa_icon "twitter"%>
+                </li>
+                <li class='fb'>
+                  <%= fa_icon "facebook" %>
+                </li>
+                <li class='insta'>
+                  <%= fa_icon "instagram" %>
+                </li>
+                <li class='rss'>
+                  <%= fa_icon "rss" %>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+
+          <div class='asaid-card'>
+            <div class='header text-center'>
+              <%= fa_icon "map-marker" %>
+              <span>メニュー</span>
+            </div>
+            <div class='body'>
+              <table class='menu-table'>
+                <tr>
+                  <td>
+                    <%= fa_icon "info-circle" %>
+                    <p class='name'>SANGOについて</p>
+                  </td>
+                  <td>
+                    <%= fa_icon "laptop" %>
+                    <p class='name'>TOP用固定ページ</p>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                    <%= fa_icon "file" %>
+                    <p class='name'>利用規約</p>
+                  </td>
+                  <td>
+                    <%= fa_icon "envelope" %>
+                    <p class='name'>お問い合わせ</p>
+                  </td>
+                </tr>
+              </table>
+            </div>
+          </div>
+
+          <div class='asaid-card'>
+            <div class='header'>
+              POPULAR
+            </div>
+            <div class='body'>
+              <div class='ranking-container'>
+                <div class='ranking'>
+                  <div class='thumb'>
+                    <%= image_tag('sango/light-mockup-min-160x160.jpg') %>
+                    <p class='label'>1</p>
+                  </div>
+                  <div class='title'>
+                     <p class='main'>WordPressテーマ「SANGO」<br>
+                       29の魅力</p>
+                     <p class='sub'>
+                       47810 views
+                     </p>
+                  </div>
+                </div>
+                <div class='ranking'>
+                  <div class='thumb'>
+                    <%= image_tag('sango/light-mockup-min-160x160.jpg') %>
+                    <p class='label'>2</p>
+                  </div>
+                  <div class='title'>
+                     <p class='main'> 記事を華やかに！約40種類<br>
+                       の見出しデザイン </p>
+                     <p class='sub'>
+                       47810 views
+                     </p>
+                  </div>
+                </div>
+                <div class='ranking'>
+                  <div class='thumb'>
+                    <%= image_tag('sango/light-mockup-min-160x160.jpg') %>
+                    <p class='label'>3</p>
+                  </div>
+                  <div class='title'>
+                     <p class='main'> SANGOのショートコード<br>
+                       でできること </p>
+                     <p class='sub'>
+                       47810 views
+                     </p>
+                  </div>
+                </div>
+                <div class='ranking'>
+                  <div class='thumb'>
+                    <%= image_tag('sango/light-mockup-min-160x160.jpg') %>
+                    <p class='label no-rank'>4</p>
+                  </div>
+                  <div class='title'>
+                     <p class='main'> 関連記事のデザインを3パターン+から選べるように </p>
+                     <p class='sub'>
+                       47810 views
+                     </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class='asaid-card'>
+            <div class='header'>
+              Follow Me
+            </div>
+            <div class='body'>
+              <ul class='sns-container square'>
+                <li class='twitter'>
+                  <%= fa_icon "twitter"%>
+                </li>
+                <li class='fb'>
+                  <%= fa_icon "facebook" %>
+                </li>
+                <li class='insta'>
+                  <%= fa_icon "instagram" %>
+                </li>
+                <li class='rss'>
+                  <%= fa_icon "rss"%>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class='asaid-card'>
+            <div class='header'>
+              ARCHIVE
+            </div>
+            <div class='body'>
+              <div class="select-box">
+                <select>
+                  <option value="7">月を選択</option>
+                  <option value="7">7月</option>
+                  <option value="8">8月</option>
+                  <option value="9">9月</option>
+                </select>
+              </div>
+            </div>
+          </div>
+
+          <div class='asaid-card'>
+            <div class='header'>
+              <%= fa_icon "list" %>
+              <span>CATEGORY</span>
+            </div>
+            <div class='body'>
+              <div class='category-container'>
+                <ul class='category-list'>
+                  <li>
+                    <span class='title'>カテゴリ</span>
+                    <span class='label'>4</span>
+                  </li>
+                  <li>
+                    <span class='title'>カテゴリ</span>
+                    <span class='label'>12</span>
+                  </li>
+                  <li class='sub'>
+                    <span class='title'>サブカテゴリ</span>
+                    <span class='label'>2</span>
+                  </li>
+                  <li class='sub'>
+                    <span class='title'>サブカテゴリ</span>
+                    <span class='label'>1</span>
+                  </li>
+                  <li>
+                    <span class='title'>カテゴリ</span>
+                    <span class='label'>8</span>
+                  </li>
+
+                </ul>
+              </div>
+            </div>
+          </div>
+        </aside>
+      </div>
+    </div>
+    <footer>
+      <div class='main-container'>
+        <div class='column'>
+          <div class='search-container'>
+            <input type="search" name="" value="">
+            <button>
+              <%= fa_icon "search" %>
+            </button>
+          </div>
+
+          <p class='heading'>PAGES</p>
+          <ul class='list'>
+            <li><a href="#">1カラム固定ページ</a></li>
+            <li><a href="#">SANGOについて</a></li>
+            <li><a href="#">トップページ用固定ページ</a></li>
+          </ul>
+
+        </div>
+        <div class='column'>
+          <p class='heading'>RECENT POSTS</p>
+          <ul class='thumb-list'>
+            <li>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-160x160.jpg') %>
+              </div>
+              <div class='title'>
+                 <p class='main'>WordPressテーマ「SANGO」
+                   29の魅力</p>
+                 <p class='sub'>
+                   2018/9/21
+                 </p>
+              </div>
+            </li>
+            <li>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-160x160.jpg') %>
+              </div>
+              <div class='title'>
+                 <p class='main'>WordPressテーマ「SANGO」
+                   29の魅力</p>
+                 <p class='sub'>
+                   2018/9/21
+                 </p>
+              </div>
+            </li>
+            <li>
+              <div class='thumb'>
+                <%= image_tag('sango/light-mockup-min-160x160.jpg') %>
+              </div>
+              <div class='title'>
+                 <p class='main'>WordPressテーマ「SANGO」
+                   29の魅力</p>
+                 <p class='sub'>
+                   2018/9/21
+                 </p>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class='column'>
+          <p class='heading'>CATEGORY</p>
+          <ul class='list'>
+            <li><a href="#">カスタマイズカテゴリー</li>
+            <li><a href="#">カテゴリー名</li>
+            <li><a href="#">デザイン</li>
+            <li><a href="#">ニュース</li>
+            <li><a href="#">ボックス</li>
+            <li><a href="#">リスト</li>
+            <li><a href="#">見出し</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class='sub-container'>
+        <p class='home'>
+          <%= fa_icon "home" %>HOME
+        </p>
+        <ul class='link-list'>
+          <li><a>利用規約</a></li>
+          <li><a>お問い合わせ</a></li>
+        </ul>
+        <p class='catchcopy'>
+          © 2018	saruwakakun.com	All rights reserved.
+        </p>
+      </div>
+    </footer>
   </body>
 </html>
