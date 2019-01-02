@@ -1,24 +1,20 @@
-# README
+# 模写したものを投稿していくだけのサイト
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+## sango
 
-Things you may want to cover:
+### 制作目的
+* どれくらいの時間で1ページ模写ができるか。
+* 自分の苦手な部分の洗い出し
 
-* Ruby version
+### 制作時間
+7時間2分24秒
 
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+### 考察
+* flexbox依存がすごい！
+  * 適材適所で、gridレイアウトとかtableとか使うようにしていきたい。
+* サイドnavのコンテンツごとのpaddingを、コンポーネントごとに設定してしまった。
+  * aside-innerかなんかつくってうまくやりたかった。
+* fontawsomeを調べる時間だいぶ使ってしまった。
+* box-shadowの設定が苦手。
+* translateはdisplay:inlineの時、効かないことを初めて知った。
+* form周り、table周りのコーディングが苦手なことに気づけた。
